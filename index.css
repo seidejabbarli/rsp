@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: blanchedalmond;
+    margin-top: 50px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rsp{
+    display: flex;
+    gap: 20px;
+}
+.rsp>div, .comp{
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    width: 200px;
+    height: 250px;
+}
+
+/* .comp{
+   
+} */
+
+.rock{
+   background-image: url(./assets/rock2.png);
+   background-position: center;
+   background-size: 100% 100%;
+   transition: 1s all;
+}
+.paper{
+   background-image: url(./assets/paper.png);
+   background-size: 100% 100%;
+   transition: 1s all;
+} 
+.scissors{
+    background-image: url(./assets/scissors.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 1s all;
+}
+
+.comp:hover{
+    background-size: 110% 110%;
+}
+
+.rsp>div:hover{
+    background-size: 110% 110%;
+}
+ 
